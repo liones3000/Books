@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="lib/jquery/dist/jquery.js"></script>
+	<link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</head>
+<body>
+	<div class="container">
+		<h1>Book</h1>
+
+		<form id="form-search">
+			<div class="input-group form-group">
+				<input type="text" class="form-control" name="query" placeholder="Search for..." autocomplete="off">
+				<span class="input-group-btn">
+					<button class="btn btn-secondary" type="submit">
+						<span class="glyphicon glyphicon-search"></span>
+					</button>
+				</span>
+			</div>
+		</form>
+
+		<div class="row">
+			<div class="col-xs-6">
+				<div class="list-group" id="books-list"></div>
+			</div>
+			<div class="col-xs-6">
+				<div class="panel panel-info" id="selected-book" hidden></div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/service.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
