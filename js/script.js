@@ -8,7 +8,7 @@ console.clear();
 		$formSearch = $('#form-search');
 
 	var allBooks = [];
-	var allVideo = [];
+	// var allVideo = [];
 
 function requestBook(value){
 
@@ -64,18 +64,18 @@ function requestBook(value){
 		requestBook(query);
 	})
 
-function requestVideo(){
+// function requestVideo(){
 
-	var request = http.getVideo();
+// 	var request = http.getVideo();
 
-	request.done(function(request){
+// 	request.done(function(request){
 
-	allVideo = JSON.parse(request);
+// 	allVideo = JSON.parse(request);
 
-		allVideo.results.forEach(function(item){
-			console.log(item.artworkUrl100);
-		})
-	});
-}
-	requestVideo();
+// 		allVideo.results.forEach(function(item){
+// 			console.log(item.artworkUrl100);
+// 		})
+// 	});
+// }
+// 	requestVideo();
 })(jQuery);
