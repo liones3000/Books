@@ -2,6 +2,7 @@ lib/bootstrap/*
 !lib/bootstrap/dist
 lib/bootstrap/dist/*
 
+!lib/bootstrap/dist/fonts
 !lib/bootstrap/dist/css
 lib/bootstrap/dist/css/*
 !lib/bootstrap/dist/css/bootstrap.min.css
