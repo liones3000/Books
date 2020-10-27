@@ -1,6 +1,6 @@
 console.clear();
 
-// (function($){
+(function($){
 	var http = new HttpService();
 
 	var $booksList = $('#books-list'),
@@ -73,10 +73,9 @@ function requestVideo(){
 	allVideo = JSON.parse(request);
 
 		allVideo.results.forEach(function(item){
-			// debugger;
 			console.log(item.artworkUrl100);
 		})
 	});
 }
 	requestVideo();
-// })(jQuery);
+})(jQuery);
