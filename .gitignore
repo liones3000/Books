@@ -1,1 +1,13 @@
-lib
+lib/bootstrap/*
+!lib/bootstrap/dist
+lib/bootstrap/dist/*
+
+!lib/bootstrap/dist/css
+lib/bootstrap/dist/css/*
+!lib/bootstrap/dist/css/bootstrap.min.css
+
+
+lib/jquery/*
+!lib/jquery/dist
+lib/jquery/dist/*
+!lib/jquery/dist/jquery.js
